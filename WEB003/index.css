@@ -1,0 +1,11 @@
+body {
+     color : #685966 ;
+     background : #FFF ;
+}
+h1{
+     text-decoration:underline ;
+     font-size : 11px ;
+     color: #2b212c;
+     margin : 10px 0 10px 0;
+     padding : 10px 0 10px 0;
+}
