@@ -1,21 +1,23 @@
 {% extends 'layouts/nav.html' %} {% block content %}
 
-<main>
+<main data-aos="fade-up">
     
   <section id="hero" class="hero d-flex align-center">
     <div class="container">
       <div class="row">
-        <h1 data-aos="fade-up"> Login</h1>
+        <h1> Login</h1>
 
-<form method="POST" class="post-form" action="{% url 'create_products' %}"> 
+<form method="POST" class="post-form" action="{% url 'about' %}"> 
     {% csrf_token %}
-    <div class="card w-50 bg-transparent mx-auto border-0">
-        <div class="card-body">
-          {{ form.as_table}}
+    <div class="card w-75 bg-transparent mx-auto justify-content-center border-0">
+        <div class="card-body w-50 mx-auto">
+          {{ form.as_p}}
         </div>
-    </table>
-    <button type="submit" class="btn btn-primary mx-auto w-25" href="{% url 'about' %}">Ingresar</a>
+        <button type="submit" class="btn btn-primary mx-auto w-25" href="{% url 'about' %}">Ingresar</a>
+      </div>
+    
 </form>
+</div>
 </div>
 </section>
 </main>
