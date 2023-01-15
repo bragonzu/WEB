@@ -33,24 +33,7 @@ class RegisterForm(UserCreationForm):
         return user 
 
 
- 
-# class CreateNewProduct(Product):
-#     class Meta:
-#         model = Product
-#         fields = '__all__'
-        # for field_name, field in fields.items():
-        #     if field.widget.attrs.get('class'):
-        #         field.widget.attrs['class'] += ' form-control'
-        #     else:
-        #         field.widget.attrs['class']='form-control'
 
-#     def __init__(self, *args, **kwargs):
-#         super(CreateNewProduct, self).__init__(*args, **kwargs)
-#         for field_name, field in self.fields.items():
-#             if field.widget.attrs.get('class'):
-#                 field.widget.attrs['class'] += ' form-control'
-#             else:
-#                 field.widget.attrs['class']='form-control'
 
 class CreateNewProduct(forms.Form):
     SELECTION_TYPE = (
